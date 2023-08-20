@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel= 'icon' href= 'favicon.ico' type= 'img/Beauty.jpg'/>
   <title>Project Title</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
@@ -12,6 +13,10 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href = "css/custom.css" rel= "stylesheet"/>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
   <style>
@@ -20,29 +25,74 @@
       opacity: 1 !important;
       font-weight: 700 !important;
     }
+    .flex-item{
+      align
+    }
+    .banner {
+      background: url('img/rafting.jpg') no-repeat center;
+      background-size: cover;
+      height: 600px;
+      position: relative;
+    }
+    .adpative-image {
+      width: 1000px;
+      height: 200px;
+      overflow: hidden; /* Crop the image */
+  }
+
+  .adpative-image img {
+      width: 100%; /* Make sure the image width matches the container width */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Crop the image */
+      /* If needed, adjust the cropping position */
+      /* object-position: center top; */
+  }
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+  
+    .welcome {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+  
+    .description {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 
 <body>
-  <div class="menu-container"></div>
+  <div class="menu_container"></div>
   <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
     <!--Start Header-->
-    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+
     <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the header area</h2>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, <a href="javascript:void(0)">sem quam semper libero</a>, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
+      <table>
+        <tr>
+          <div class="flex-item flex-column menu-container">
+            <h2 class="add-top-margin-small welcome text-start"   style="text-align: center";>Welcome to the Tourguide app!</h2>
+            <p class= "text-start">Welcome to our exciting app that brings creativity and convenience together!</p>
+            <p class= "text-start">trademark@</p>
           </div>
-        </div>
-      </div>
+          
+        </tr>
+        <tr>
+          <div class="banner-table flex-column start-banner"">
+            <div class="flex-row menu_container">
+            </div>
+          </div>
+      </tr>
+    </table>
+        
     </div>
     <!--End Header-->
     <!-------------------------------------------------------------------------------------------->
@@ -50,247 +100,188 @@
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
         <!--Start Intro-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img class="image" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-column">
-            <p class="text text-large">
-              <a target="_blank" href="javascript:void(0)">Author 1</a>, author1 (at) cs.cmu.edu<br>
-              <a target="_blank" href="javascript:void(0)">Author 2</a>, author2 (at) cs.cmu.edu<br>
-              <a target="_blank" href="javascript:void(0)">Author 3</a>, author3 (at) cs.cmu.edu<br>
-              <a target="_blank" href="javascript:void(0)">Laboratory</a><br>
-              <a target="_blank" href="javascript:void(0)">Institute</a><br>
-              <a target="_blank" href="javascript:void(0)">Organization</a><br>
-              <a target="_blank" href="javascript:void(0)">Street Address</a><br>
-              <a target="_blank" href="javascript:void(0)">City, State, Country</a>
-            </p>
-          </div>
+        <table>
+          <tr>
+            <td>
+              <div class="flex-row">
+                <div class="flex-item flex-column">
+                  <img class="image" src="img/honeyweb.jpg" height= 370.0 width = 470.0>
+                </div>
+                <div class="flex-item flex-column">
+                  <p class="text text-large">
+                    <a target="_blank" href="javascript:void(0)">Honey Abdurahman</a>, hofaysa@gmail.com<br>
+                    Laboratory: CodeWave lab<br>
+                    Institute: COCIS<br>
+                    Organization: Makerere University<br>
+                    Street Address: Makerere Road<br>
+                    City, State, Country: Kampala, Central, Uganda
+                  </p>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="flex-row">
+                <div class="flex-item flex-column">
+                  <img class="image" src="img/amos.jpg" height= 370.0 width = 470.0>
+                </div>
+                <div class="flex-item flex-column">
+                  <p class="text text-large">
+                    <a target="_blank" href="javascript:void(0)">Ojok Amos</a>, ojokamos@gmail.com<br>
+                    Laboratory: CodeWave<br>
+                    Institute: COCIS<br>
+                    Organization: Makerere University<br>
+                    Street Address: Makerere road<br>
+                    City, State, Country: Kampala, Central, Uganda
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        
         </div>
+      
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae
-              sapien ut libero venenatis faucibus. Nullam quis ante.
+                With a collective love for travel and technology, we came together to create a platform that enhances your travel
+                experiences. Our team consists of diverse individuals with backgrounds in design, development, and tourism.
             </p>
             <h3>Table of Content</h3>
-            <ul>
-              <li><a href="#text-only">Text Only</a></li>
-              <li><a href="#buttons-and-inputs">Buttons and Inputs</a></li>
-              <li><a href="#images-and-image-button">Images and Image Button</a></li>
-              <li><a href="#text-around-image">Text around Image</a></li>
-              <li><a href="#centered-image-and-table">Centered Image and Table</a></li>
-              <li><a href="#adaptive-image">Adaptive Image</a></li>
-              <li><a href="#text-with-images-and-videos">Text with Images and Videos</a></li>
-              <li><a href="#iframe">Iframe</a></li>
-              <li><a href="#list-of-projects">List of Projects</a></li>
-              <li><a href="#gallery">Gallery (responsive size)</a></li>
-              <li><a href="#masonry">Masonry (responsive size)</a></li>
-              <li><a href="#survey">Survey</a></li>
-            </ul>
+            <table>
+              <tr>
+                <td>
+                <ul>
+                   <li><a href="#about">About TourGuide</a></li>
+                   <li><a href="#discover">Impact</a></li>
+                   <li><a href="#plan">Plan Your Trips</a></li>
+                   <li><a href="#guides">Detailed Travel Guides</a></li>
+                   <li><a href="#connect">Connect with Travelers</a></li>
+                   <li><a href="#explore">Explore Uganda</a></li>
+                   <li><a href="#items">Items for the journey</a></li>
+                   <li><a href="#necesities">All your necesities in one place</a></li>
+                   <li><a href="#iframe">Night life</a></li>
+                   <li><a href="#bookings">Bookings</a></li>
+                   <li><a href="#helpline">Helpline (responsive size)</a></li>
+                   <li><a href="#masonry">Masonry (responsive size)</a></li>
+                   <li><a href="#survey">Survey</a></li>
+                 </ul>
+                </td>  
+                <td>
+                  <img class="image" src="img/snake.png" height= 370.0 width = 190.0>
+                <p>    @Tourguide</p>
+                </td>
+              </tr>
+            </table>
+            
           </div>
         </div>
+        
         <!--End Intro-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text Only-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-only">Text Only</h2>
+            <h2 id="text-only">Mission</h2>
             <hr>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              At TourGuide, we wholeheartedly believe that travel is more than just a 
+              journey from one place to another. It's about creating cherished memories, 
+              embarking on adventures, and opening your eyes to new horizons. With this belief at 
+              the core of our mission, we have poured our passion, dedication, and expertise into the 
+              development of an app that's not just a tool, but a trusted travel companion.
             </p>
             <p class="text">
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-              vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos
-              ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia
-              animi, id est laborum et dolorum fuga.
+              Our app is a result of tireless efforts to empower travelers like 
+              you to explore the world with confidence and excitement. We understand 
+              that each traveler seeks unique experiences, whether it's diving into rich cultural 
+              heritage, marveling at natural wonders, or savoring the flavors of local cuisines. This 
+              is why TourGuide is designed to cater to your diverse interests and aspirations, ensuring 
+              that every journey is curated to match your preferences.
             </p>
-            <h3>Break Long URL</h3>
+            <h3>Impact</h3>
             <p class="text">
-              <a class="break-long-url" target="_blank" href="https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922">https://www.google.com/maps/place/Carnegie+Mellon+University/@40.4430576,-79.9431263,17z/data=!4m5!3m4!1s0x8834f21f58679a9f:0x88716b461fc4daf4!8m2!3d40.4428753!4d-79.9430922</a>
-            </p>
-            <h3>Nested List</h3>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, <a target="_blank" href="javascript:void(0)">sit amet adipiscing sem neque</a> sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
+              The TourGuide app has revolutionized the way people experience travel and exploration. Our platform is dedicated to creating lasting memories, fostering cultural exchange, and promoting responsible tourism.
+              With TourGuide, travelers from all walks of life can:
             </p>
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aenean commodo ligula eget dolor.
-                <ul>
-                  <li>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</li>
-                  <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                    <ul>
-                      <li>Li nov <a target="_blank" href="javascript:void(0)">lingua franca</a>.</li>
-                      <li>It va esser Occidental.</li>
-                      <li>Existent Europan lingues.</li>
-                    </ul>
-                  </li>
-                  <li>Nullam dictum felis eu pede mollis pretium.</li>
-                </ul>
-              </li>
-              <li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
+              <li>Connect with local communities, immersing themselves in authentic cultural experiences.</li>
+              <li>Discover hidden gems and off-the-beaten-path destinations, supporting local economies along the way.</li>
+              <li>Plan sustainable trips that minimize environmental impact and respect the beauty of our planet.</li>
+              <li>Access comprehensive travel guides that provide valuable insights and recommendations.</li>
+              <li>Share their own stories and recommendations, contributing to a vibrant global travel community.</li>
             </ul>
             <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-              simplificat Angles, quam un skeptic Cambridge amico dit me.
+              Our mission is to empower travelers to explore the world responsibly, creating positive impacts on both the destinations they visit and the global travel ecosystem. Join us in shaping the future of travel!
             </p>
-            <ol class="nested">
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aenean commodo ligula eget dolor.
-                <ol class="nested">
-                  <li>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</li>
-                  <li>In enim justo, <a target="_blank" href="javascript:void(0)">rhoncus ut, imperdiet a</a>, venenatis vitae, justo.
-                    <ol class="nested">
-                      <li>Li nov lingua franca.</li>
-                      <li>It va esser Occidental.</li>
-                      <li>Existent Europan lingues.</li>
-                    </ol>
-                  </li>
-                  <li>Nullam dictum felis eu pede mollis pretium.</li>
-                </ol>
-              </li>
-              <li>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </li>
-            </ol>
-            <h3>List with Customized Reverse Numbering</h3>
+
+           
+            <h3>Plan your trips</h3>
             <ol class="publication C-list">
               <li>
                 <p class="text-small-margin">
-                  Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-                  augue. Curabitur ullamcorper ultricies nisi.
+                  With the TourGuide app, planning your dream trips has never been easier. Whether you're embarking on a solo adventure, a romantic getaway, or a family vacation, our platform offers the tools and resources you need to create unforgettable journeys.
                 </p>
               </li>
               <li>
                 <p class="text-small-margin">
-                  Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-                  condimentum rhoncus, sem quam semper libero, <a target="_blank" href="javascript:void(0)">sit amet adipiscing sem neque sed ipsum</a>. Nam quam nunc, blandit
-                  vel, luctus pulvinar, hendrerit id, lorem.
+                  Explore a wide range of destinations, from bustling cities to serene natural landscapes. Our app provides detailed travel guides, insider tips, and up-to-date information, ensuring that you have everything you need to make informed decisions about your itinerary.
                 </p>
               </li>
               <li>
                 <p class="text-small-margin">
-                  Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-                  coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+                  Customize your trips based on your interests, preferences, and budget. Discover local attractions, cultural events, and authentic experiences that match your travel style. From accommodations to transportation, the TourGuide app streamlines the planning process, saving you time and stress.
                 </p>
               </li>
             </ol>
-            <h3>Math Equations</h3>
+            
+            <h3>Getting Travel Guides</h3>
+            <table class= "table">
+              <tr>
+                <td>
+                  <img type= "image" src ="img/logo.png" height= 150px width= 200px/>
+                </td>
+                <td>
+                  Certainly, I'd be happy to help you with that! Below is a suggested section for the "Getting Travel Guides" part of your project website:
+
+                  Getting Travel Guides
+                  Are you ready to embark on an unforgettable journey and explore the world's wonders? Our travel guides are here to ensure you make the most of your adventure. Whether you're an avid explorer or a first-time traveler, our carefully curated travel guides are designed to help you plan your trip with ease and excitement. Here's what you can expect:
+  
+                  Comprehensive Destination Insights
+                  Our travel guides are packed with valuable insights about various destinations across the globe. From bustling cities to serene natural landscapes, we've got you covered. Discover hidden gems, must-visit attractions, local cuisines, cultural experiences, and much more. Our guides provide a comprehensive overview of each destination, helping you make informed decisions about your travel plans.
+  
+                  Itinerary Recommendations
+                  Navigating a new place can be overwhelming, but our travel guides simplify the process by offering sample itineraries. Whether you're looking for a weekend getaway or an extended vacation, you'll find suggested day-by-day plans that cover all the highlights. These itineraries can be tailored to your preferences, ensuring that you make the most of your time in any location.
+  
+                  Insider Tips and Local Advice
+                  Want to know the best places to catch a breathtaking sunset, enjoy authentic street food, or immerse yourself in the local culture? Our travel guides include insider tips and recommendations from experienced travelers and locals. You'll gain access to valuable insights that aren't typically found in standard guidebooks, helping you create memorable experiences that go beyond the ordinary.
+  
+                  Practical Travel Information
+                  Traveling involves more than just sightseeing—it requires practical preparation. Our guides provide essential information such as visa requirements, transportation options, local customs, and language basics. Whether you're a solo traveler, a couple, or a family, you'll find valuable information to ensure a smooth and enjoyable journey.
+                  
+                </td>
+                
+              </tr>
+            </table>
             <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-            </p>
-            <img class="image center" src="http://latex.codecogs.com/svg.latex?C\cdot(3\sin\theta_1+3\sin\theta_2-\cos\theta_1-\cos\theta_2)" style="max-width: 300px;">
-            <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
+              Personalized Recommendations
+              Every traveler is unique, and our travel guides acknowledge that. We offer personalized recommendations based on your interests, preferences, and travel style. Whether you're an adventure seeker, a history enthusiast, a food lover, or a combination of everything, our guides help you tailor your trip to match your passions.
+                          
+              How to Access Our Travel Guides
+              Accessing our travel guides is easy and convenient. Simply browse through the available destinations on our website, select the guide that interests you, and start planning your dream getaway. Our guides are available for free and can be downloaded or viewed online. Feel free to print them out or keep them handy on your smartphone for quick reference during your travels.
+                          
+              Make your travel dreams a reality with our comprehensive and user-friendly travel guides. Start exploring today and let the adventure begin!
+          </p>
             </p>
           </div>
         </div>
         <!--End Text Only-->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Text with Buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="buttons-and-inputs">Buttons and Inputs</h2>
-            <hr>
-            <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
-            <div class="control-group">
-              <button class="custom-button">Default</button>
-              <button class="custom-button custom-button-primary">Primary</button>
-              <button class="custom-button custom-button-danger">Danger</button>
-              <button class="custom-button custom-button-info">Info</button>
-              <button class="custom-button" disabled>Disabled</button>
-              <a class="custom-button" target="_blank" href="https://github.com/yenchiah/project-website-template" target="_blank">Hyperlink</a>
-              <button class="custom-button custom-button-primary stretch-on-mobile">Stretch on Mobile</button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button pulse-black">Pulse</button>
-              <button class="custom-button custom-button-primary pulse-primary">Pulse</button>
-              <button class="custom-button custom-button-danger pulse-danger">Pulse</button>
-              <button class="custom-button custom-button-info pulse-info">Pulse</button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/home.png"></button>
-              <button class="custom-button-flat" disabled><img src="img/home.png"></button>
-              <button class="custom-button-flat small"><img src="img/home.png"></button>
-              <button class="custom-button-flat large"><img src="img/home.png"></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/calendar.png"></button>
-              <button class="custom-button-flat"><img src="img/play.png"></button>
-              <button class="custom-button-flat"><img src="img/pause.png"></button>
-              <button class="custom-button-flat"><img src="img/stop.png"></button>
-              <button class="custom-button-flat"><img src="img/terrain.png"></button>
-              <button class="custom-button-flat"><img src="img/close.png"></button>
-              <button class="custom-button-flat"><img src="img/collection.png"></button>
-              <button class="custom-button-flat"><img src="img/next.png"></button>
-              <button class="custom-button-flat"><img src="img/back.png"></button>
-              <button class="custom-button-flat"><img src="img/setting.png"></button>
-              <button class="custom-button-flat"><img src="img/book.png"></button>
-              <button class="custom-button-flat"><img src="img/user.png"></button>
-              <button class="custom-button-flat"><img src="img/share.png"></button>
-              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
-                <img src="img/link.png">
-              </a>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/home.png"><span>Home</span></button>
-              <button class="custom-button-flat" disabled><img src="img/home.png"><span>Disabled</span></button>
-              <button class="custom-button-flat small"><img src="img/home.png"><span>Small</span></button>
-              <button class="custom-button-flat large"><img src="img/home.png"><span>Large</span></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/calendar.png"><span>Calendar</span></button>
-              <button class="custom-button-flat"><img src="img/play.png"><span>Play</span></button>
-              <button class="custom-button-flat"><img src="img/stop.png"><span>Stop</span></button>
-              <button class="custom-button-flat"><img src="img/terrain.png"><span>Terrain</span></button>
-              <button class="custom-button-flat"><img src="img/close.png"><span>Close</span></button>
-              <button class="custom-button-flat"><img src="img/collection.png"><span>Collection</span></button>
-              <button class="custom-button-flat"><img src="img/next.png"><span>Next</span></button>
-              <button class="custom-button-flat"><img src="img/back.png"><span>Back</span></button>
-              <button class="custom-button-flat"><img src="img/setting.png"><span>Setting</span></button>
-              <button class="custom-button-flat"><img src="img/book.png"><span>Tutorial</span></button>
-              <button class="custom-button-flat"><img src="img/user.png"><span>User</span></button>
-              <button class="custom-button-flat"><img src="img/share.png"><span>Share</span></button>
-              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
-                <img src="img/link.png"><span>Hyperlink</span>
-              </a>
-              <button class="custom-button-flat stretch-on-mobile"><img src="img/play.png"><span>Stretch on Mobile</span></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat pulse-black"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-primary"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-danger"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-info"><img src="img/home.png"><span>Pulse</span></button>
-            </div>
-            <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-              simplificat Angles, quam un skeptic Cambridge amico dit me.
-            </p>
-          </div>
-        </div>
+        
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <p class="text badge-text">Large Badge Caption!</p>
+            <p class="text badge-text">Connect with Travelers</p>
           </div>
           <div class="flex-item flex-column">
             <div class="control-group">
@@ -304,26 +295,41 @@
           </div>
         </div>
         <div class="flex-row">
+          <div class="flex-item flex-item-stretch flex-column">
+            <video preload controls autoplay loop muted playsinline class="image">
+              <source src="vid/trekking.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="flex-item flex-item-stretch flex-column">
+            <p class="text">
+              In this section, we delve into the exciting and dynamic world of meeting fellow travelers during your journeys. Connecting with other adventurers can significantly enhance your travel experiences, opening doors to new friendships, cultural exchanges, and shared memories. Here's how you can make the most of meeting travelers during your trips:
+
+              Shared Stories and Experiences: Engage in conversations with fellow travelers to exchange stories, experiences, and travel insights. Learn from their journeys and share your own, fostering a sense of camaraderie that transcends borders.
+              
+              Social Spaces and Gatherings: Many destinations offer communal spaces like hostels, cafes, and parks where travelers naturally gather. These spaces create a conducive environment for striking up conversations and forming connections.
+              
+              Join Group Activities: Participate in group activities and tours that bring together like-minded individuals.            
+            </p>
+          </div>
+        <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
-            <div class="control-group">
-              <input class="custom-textbox stretch-on-mobile" type="text" placeholder="e.g., 15213">
-              <textarea class="custom-textbox stretch-on-mobile" placeholder="e.g., 15213"></textarea>
-            </div>
-            <div class="control-group">
-              <input class="custom-textbox stretch-on-mobile" value="http://yenchiah.me/" type="text" readonly>
-              <textarea class="custom-textbox stretch-on-mobile" readonly>Phasellus viverra nulla ut metus varius laoreet.</textarea>
-            </div>
-            <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-              simplificat Angles, quam un skeptic Cambridge amico dit me.
+              From hiking excursions to city tours, these activities create opportunities for organic interactions with fellow participants.
+              
+              Local Events and Festivals: Attend local events, festivals, and cultural gatherings to immerse yourself in the local culture and meet both locals and fellow travelers who share an interest in the destination's traditions.
+              
+              Online Travel Communities: Utilize online platforms, forums, and social media groups dedicated to travel. These spaces allow you to connect with travelers before, during, and after your trip, providing a platform for sharing advice and meeting up.
+              
+              Language Exchange: Engage in language exchange activities with locals and other travelers. Learning a few phrases in the local language can open doors to meaningful conversations and connections.
+                 
+              Cultural Workshops: Participate in workshops, classes, and cultural activities. These not only enhance your understanding of the destination but also provide opportunities to meet others who share your interests.
+
+Stay Open-Minded: Approach interactions with an open heart and an open mind. Embrace the diversity of personalities, backgrounds, and stories you encounter, as each connection offers a chance to broaden your horizons.
+
+Safety and Caution: While meeting fellow travelers can be incredibly rewarding, exercise caution and trust your instincts. Always prioritize your safety and choose public spaces for initial meetings.
+
+Traveling Solo?: If you're traveling alone, meeting other travelers can help alleviate feelings of loneliness and enhance your overall experience. Solo travelers often find it easier to strike up conversations with both locals and fellow adventurers.
             </p>
           </div>
         </div>
@@ -332,35 +338,47 @@
         <!--Start Text with Images and Image buttons-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="images-and-image-button">Images and Image Button</h2>
+            <h2 id="images-and-image-button">Explore Uganda</h2>
             <hr>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              Embark on a captivating journey through the vibrant landscapes and diverse cultures of Uganda. This section is your guide to discovering the hidden gems, natural wonders, and cultural treasures that make this East African nation a must-visit destination. Get ready to explore Uganda's rich tapestry through the following highlights:
+
+              Natural Wonders: Immerse yourself in the breathtaking beauty of Uganda's landscapes. From the snow-capped Rwenzori Mountains to the vast savannahs of Queen Elizabeth National Park, encounter diverse ecosystems and rare wildlife in their natural habitats.
+              
+              Primate Encounters: Uganda is famed for its primate population, including the rare mountain gorillas in Bwindi Impenetrable Forest. Learn about conservation efforts and embark on life-changing encounters with these gentle giants and other primate species.
+              
+              Journey Along the Nile: Follow the course of the world's longest river as it winds through Uganda. Discover the thundering Murchison Falls, cruise the tranquil waters of Lake Victoria, and seek out the elusive wildlife along the riverbanks.
+              
+              Cultural Experiences: Immerse yourself in Uganda's vibrant cultures and traditions. Visit local communities, participate in traditional ceremonies, and explore craft markets to gain insights into the lives of Ugandans.
             </p>
           </div>
         </div>
         <div class="flex-row-space-between">
           <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/dummay-img.png">
-            <p class="image-caption">Image Caption</p>
+            <img class="image max-width-400" src="img/funtourism.jpg">
+            <p class="image-caption">Tourguide taking a group through a town</p>
           </div>
           <div class="flex-item flex-column">
             <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
-              <img src="img/dummay-img.png">
+              <img src="img/app.jpg">
             </a>
-            <p class="image-caption">Image Button Caption</p>
+            <p class="image-caption">Tourguide app has you fully covered</p>
           </div>
         </div>
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              Lively Cities: Uncover the urban side of Uganda in its bustling cities. Explore the capital city of Kampala, known for its vibrant markets, lively nightlife, and historical landmarks that tell the story of Uganda's past.
+
+              Adventure Activities: For the thrill-seekers, Uganda offers a plethora of adventure activities. Trek to see chimpanzees, embark on white-water rafting expeditions, and navigate through dense jungles for an adrenaline rush like no other.
+              
+              Lakes and Waterways: Dive into the world of Uganda's lakes and waterways. From serene Lake Bunyonyi surrounded by rolling hills to the remote beauty of Lake Mutanda, explore the diverse aquatic landscapes.
+              
+              Birdwatching Paradise: With over 1,000 species of birds, Uganda is a paradise for birdwatching enthusiasts. Traverse swamps, forests, and savannahs to spot a wide variety of feathered wonders.
+              
+              Conservation and Sustainability: Learn about Uganda's commitment to conservation and sustainable tourism practices. Discover initiatives aimed at protecting the environment and preserving the country's natural treasures for future generations.
+              
+              Local Cuisine and Culinary Delights: Delight your taste buds with Ugandan cuisine. Sample traditional dishes and experience the flavors of locally sourced ingredients that reflect the country's agricultural abundance.
             </p>
           </div>
         </div>
@@ -369,23 +387,17 @@
         <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-around-image">Text around Image</h2>
+            <h2 id="text-around-image">Items for the journey</h2>
             <hr>
             <p class="text">
-              <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-              aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-              voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-              pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-              similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-              rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis.
+              <img class="image image-wrap-text max-width-400" src="img/Beauty.jpg">
+              When setting off on an unforgettable journey, preparation is key. Our Tourguide app goes beyond guiding you through destinations; it ensures you're equipped with the right essentials. In the 'Items for the Journey' section, we provide you with a comprehensive checklist of items to pack before you embark on your adventure.
+
+From the basics like clothing and toiletries to specialized gear for outdoor activities, our app has you covered. Whether you're planning a hike through breathtaking landscapes or a leisurely exploration of cultural landmarks, we'll help you pack efficiently. Our curated list takes into account weather conditions, activities, and local customs, ensuring you're well-prepared for every aspect of your journey.
+
+With the Tourguide app, you won't have to worry about forgetting crucial items. We make your travel experience seamless by offering packing recommendations, saving you time and helping you focus on the excitement of your upcoming adventure. Get ready to explore the world with confidence, knowing that the Tourguide app has your back every step of the way."
+
+This description highlights how your app assists travelers in preparing for their journey by providing them with a thorough packing checklist tailored to their destination and activities.
             </p>
           </div>
         </div>
@@ -393,15 +405,13 @@
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
-    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;">
+    <div class="banner" style="background: url('img/gamepark.webp') no-repeat center; background-size: cover; height: 500px;">
       <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the banner area with photo</h2>
+            <h2 class="add-top-margin-small">Elephants in Queen Elizabeth National Park</h2>
             <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur <a href="javascript:void(0)">ullamcorper ultricies nisi</a>. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus.
+            Explore the natural wanderers of the Savannahs across the country<a href="javascript:void(0)">. From the giant Elephants</a>, to the small Meerkats.
             </p>
           </div>
         </div>
@@ -413,204 +423,92 @@
         <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="centered-image-and-table" class="no-top-margin">Centered Image and Table</h2>
+            <h2 id="centered-image-and-table" class="no-top-margin">All your necesities in one place</h2>
             <hr>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              Introducing a revolutionary feature of the TourGuide app that transforms your travel experience into a seamless and organized adventure. Say goodbye to the hassle of juggling multiple apps and sources for your travel necessities – our app brings all the essential tools and information together in one place. Here's how the TourGuide app redefines your travel journey:
+
+Itinerary Planning: Create, customize, and manage your travel itineraries effortlessly. Access your daily schedules, sightseeing plans, and reservations in a single interface, ensuring you never miss a moment of your adventure.
             </p>
             <p class="text text-center graph-title">
               This is the title for the bottom image
             </p>
-            <img class="image center max-width-400 add-top-margin-small" src="img/dummay-img.png">
+            <img class="image center max-width-400 add-top-margin-small" src="img/toursuganda.jpg">
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              Accommodation Booking: Browse, compare, and book accommodations directly through the app. Whether you prefer luxury hotels, cozy guesthouses, or budget-friendly options, find the perfect place to stay without leaving the app.
+
+              Local Cuisine and Dining: Discover local dining options and explore the culinary scene. View restaurant recommendations, menus, and reviews to savor the flavors of your destination.
+              
+              Transportation Assistance: Seamlessly integrate transportation options within your travel plans. Access information on flights, buses, trains, and local transportation services, making your journey from one place to another smooth and hassle-free.
+              
+              Interactive Maps and Navigation: Navigate with confidence using interactive maps that highlight attractions, landmarks, and points of interest. Get real-time directions to your destinations and explore your surroundings effortlessly.
+              
+              Weather and Packing Tips: Stay prepared with weather forecasts and packing suggestions tailored to your destination. Get insights on what to pack based on the climate and activities you have planned.
+              
+              Local Events and Activities: Stay informed about local events, festivals, and activities taking place during your visit. Easily find and book tickets for cultural events, concerts, and unique experiences.
+              
+              Emergency Assistance: Access emergency contacts, medical facilities, and local authorities within the app. Travel with peace of mind, knowing that help is just a tap away in case of unexpected situations.
+              
+              Currency Conversion: Instantly convert currencies and get real-time exchange rates for smooth financial transactions during your travels.
+              
+              Personalized Recommendations: Receive personalized recommendations based on your interests and preferences. Discover hidden gems and off-the-beaten-path attractions that align with your travel style.
+              
+              Travel Insights and Tips: Gain valuable insights and tips from experienced travelers and local experts. Get advice on cultural norms, safety guidelines, and etiquette to ensure a respectful and enjoyable journey.
             </p>
             <p class="text text-center graph-title">
-              This is the title for the bottom table
+              Ratings from the Tourguide application users
             </p>
             <div class="custom-table-container center add-top-margin-small">
               <table class="custom-table">
                 <thead>
                   <tr class="bg-color-gray">
-                    <th>Number of</th>
-                    <th class="text-center">Unique Users</th>
-                    <th class="text-center">Smell Reports</th>
-                    <th class="text-center">Interaction Events</th>
+                    <th>Number</th>
+                    <th class="text-center">Less helpful</th>
+                    <th class="text-center">Helpful</th>
+                    <th class="text-center">Very Helpful</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Enthusiasts</td>
-                    <td class="text-center">9.4%</td>
+                    <td>Tourists</td>
+                    <td class="text-center">3.4%</td>
                     <td class="text-center">50.6%</td>
                     <td class="text-center">44.8%</td>
                   </tr>
                   <tr class="bg-color-light-gray">
                     <td>Explorers</td>
-                    <td class="text-center">36.1%</td>
+                    <td class="text-center">5.1%</td>
                     <td class="text-center">37.3%</td>
                     <td class="text-center">27.3%</td>
                   </tr>
                   <tr>
-                    <td>Contributors</td>
-                    <td class="text-center">13.0%</td>
+                    <td>Craft Sellers</td>
+                    <td class="text-center">2.0%</td>
                     <td class="text-center">12.1%</td>
-                    <td class="text-center">n/a</td>
+                    <td class="text-center">81.1</td>
                   </tr>
                   <tr class="bg-color-light-gray">
-                    <td>Observers</td>
-                    <td class="text-center">41.6%</td>
-                    <td class="text-center">n/a</td>
-                    <td class="text-center">27.9%</td>
+                    <td>Hotel Receptionists</td>
+                    <td class="text-center">10%</td>
+                    <td class="text-center">25%</td>
+                    <td class="text-center">65%</td>
                   </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <td>Size (N)</td>
-                    <td class="text-center">2,237</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">79,447</td>
+                    <td class="text-center">1,237</td>
+                    <td class="text-center">2,112</td>
+                    <td class="text-center">4,447</td>
                   </tr>
                 </tfoot>
               </table>
             </div>
-            <p class="text text-center graph-title">
-              This is the title for the bottom very long scrollable table
-            </p>
+            
             <div class="custom-table-container center add-top-margin-small">
-              <table class="custom-table">
-                <thead>
-                  <tr class="bg-color-gray">
-                    <th class="text-center">Smell Rating</th>
-                    <th class="text-center">2019</th>
-                    <th class="text-center">2018</th>
-                    <th class="text-center">2017</th>
-                    <th class="text-center">2016</th>
-                    <th class="text-center">2015</th>
-                    <th class="text-center">2014</th>
-                    <th class="text-center">2013</th>
-                    <th class="text-center">2012</th>
-                    <th class="text-center">2011</th>
-                    <th class="text-center">2010</th>
-                    <th class="text-center">2009</th>
-                    <th class="text-center">2008</th>
-                    <th class="text-center">2007</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-center">1</td>
-                    <td class="text-center">1,711 (9.5%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                    <td class="text-center">1,199 (13.0%)</td>
-                    <td class="text-center">1,658 (20.4%)</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-center">2</td>
-                    <td class="text-center">798 (4.4%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                    <td class="text-center">497 (5.4%)</td>
-                    <td class="text-center">665 (8.2%)</td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">3</td>
-                    <td class="text-center">4,305 (23.9%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                    <td class="text-center">2,649 (28.8%)</td>
-                    <td class="text-center">2,246 (27.7%)</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td class="text-center">4</td>
-                    <td class="text-center">5,804 (32.3%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                    <td class="text-center">2,932 (31.9%)</td>
-                    <td class="text-center">2,171 (26.8%)</td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">5</td>
-                    <td class="text-center">5,356 (29.8%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                    <td class="text-center">1,918 (20.9%)</td>
-                    <td class="text-center">1,372 (16.9%)</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td class="text-center">Sum</td>
-                    <td class="text-center">17,974</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">9,195</td>
-                    <td class="text-center">8,112</td>
-                  </tr>
-                </tfoot>
-              </table>
+              
             </div>
-            <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
+            
           </div>
         </div>
         <!--End Text with Centered Image and Table-->
@@ -618,20 +516,34 @@
         <!--Start Text with Adaptive Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="adaptive-image">Adaptive Image</h2>
+            <h2 id="adaptive-image">Night life</h2>
             <hr>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
-            <a class="image adaptive-image" style="background-image: url('img/dummay-img-long.png'); min-height: 150px;" href="img/dummay-img-long.png" target="_blank"></a>
+              When the sun sets and the stars begin to twinkle, the adventure is far from over – it's time to dive into the vibrant and electrifying nightlife of your destination. The TourGuide app is your ultimate companion for unlocking the secrets of the night, ensuring your nocturnal explorations are as unforgettable as your daytime adventures. Here's a glimpse into the nightlife wonders you can discover through the app:
+
+              Nightclubs and Bars: Embark on a journey through the hottest nightclubs and trendiest bars in the city. The TourGuide app offers a curated selection of nightlife venues, complete with details about themes, music genres, and special events.
+              
+              Live Music Venues: Immerse yourself in the rhythm of the night with live music performances. Discover venues hosting local bands, international artists, and genres that resonate with your musical taste.
+              
+              Cultural Performances: Experience the heartbeat of the destination through cultural performances that come alive after dark. From traditional dance shows to theatrical performances, the app unveils a calendar of captivating events.
+              
+              Food and Night Markets: Indulge your taste buds in the culinary delights of the night. Find night markets, food trucks, and late-night eateries serving up local delicacies and international cuisines.
+              
+              </p>
+            <a class="image adaptive-image" style="background-image: url('img/nightview.jpg'); min-height: 150px;" href="img/nightview.jpg" target="_blank"></a>
             <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
+              Rooftop Lounges: Elevate your nightlife experience by visiting rooftop lounges that offer breathtaking views of the city's skyline. Sip on crafted cocktails and enjoy the enchanting atmosphere.
+              
+              Themed Parties and Events: Stay updated on themed parties, costume events, and themed nights happening in the city. Join the revelry and celebrate in style.
+              
+              Guided Night Tours: Take part in guided night tours that uncover the city's hidden gems and stories after dark. Walk the illuminated streets, learn about local legends, and capture stunning photos.
+              
+              Dance Floors and DJ Sets: Dance the night away as the best DJs spin tracks to keep the energy high. Discover venues where you can dance under dazzling lights until the early hours.
+              
+              Exclusive VIP Experiences: Treat yourself to VIP experiences with access to exclusive lounges, private parties, and red-carpet treatment. The app guides you to premium nightspots that offer unparalleled luxury.
+              
+              Safety and Transportation: The TourGuide app also prioritizes your safety during nighttime adventures. Find information about safe transportation options, recommended areas to explore, and guidelines for a worry-free night out.
+            
             </p>
           </div>
         </div>
@@ -639,455 +551,26 @@
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
-    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;"></div>
+    
     <div class="banner">
       <div class="banner-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the two banner area with photo</h2>
+            <h2 class="add-top-margin-small">White water rafting on River Nile</h2>
             <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus.
+              Explore the longest river in the world in exciting ways that run up your adrenaline!.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="content-table flex-column">
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Videos-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="text-with-images-and-videos" class="no-top-margin">Text with Images and Videos</h2>
-            <hr>
-            <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-              simplificat Angles, quam un skeptic Cambridge amico dit me.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-              magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <video preload controls autoplay loop muted playsinline class="image">
-              <source src="vid/mov_bbb.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-              magnam.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del
-              coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues.
-              It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un
-              simplificat Angles, quam un skeptic Cambridge amico dit me.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-2 flex-column">
-            <p class="text">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
-            </p>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/dummay-img.png">
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch-2 flex-column">
-            <p class="text">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
-            </p>
-          </div>
-          <div class="flex-item flex-item-stretch flex-column">
-            <video preload controls autoplay loop muted playsinline class="image">
-              <source src="vid/mov_bbb.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
-          </div>
-        </div>
-        <!--End Text with Images and Videos-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Iframe-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="iframe">Iframe</h2>
-            <hr>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-            <iframe class="iframe-in-body" src="http://yenchiah.me/geo-heatmap/smell.html"></iframe>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <!--END Text with Iframe-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start List of Projects-->
-        <div class="flex-row">
-          <div class="flex-item flex-column full-width">
-            <h2 id="list-of-projects">List of Projects</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet.
-            </p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-400" src="img/dummay-img.png">
-          </div>
-          <div class="flex-item flex-item-stretch-4 flex-column">
-            <p class="text">
-              <a class="highlight-text" href="javascript:void(0)">Li Europan Lingues es Membres Del Sam Familie</a><br>
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet.
-            </p>
-          </div>
-        </div>
-        <!--End List of Projects-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Gallery-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="gallery">Gallery (responsive size)</h2>
-            <hr>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-          <a href="javascript:void(0)" class="flex-column"><img src="img/dummay-img.png">
-            <div>Image Caption</div>
-          </a>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <div class="gallery add-top-margin-small add-bottom-margin-small">
-          <div class="flex-column">
-            <img src="img/dummay-img.png">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-            <div>
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">Website</a>
-              &nbsp;|&nbsp;
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">LinkedIn</a>
-            </div>
-          </div>
-          <div class="flex-column">
-            <img src="img/dummay-img.png">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-            <div>
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">Website</a>
-              &nbsp;|&nbsp;
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">LinkedIn</a>
-            </div>
-          </div>
-          <div class="flex-column">
-            <img src="img/dummay-img.png">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-            <div>
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">Website</a>
-              &nbsp;|&nbsp;
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">LinkedIn</a>
-            </div>
-          </div>
-          <div class="flex-column">
-            <img src="img/dummay-img.png">
-            <h3>Phasellus Viverra</h3>
-            <div>Quisque Rutrum</div>
-            <div>
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">Website</a>
-              &nbsp;|&nbsp;
-              <a href="http://yenchiah.me/project-website-template/" target="_blank">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <!--End Gallery-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Masonry-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="masonry">Masonry (responsive size)</h2>
-            <hr>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <div class="masonry add-top-margin-small add-bottom-margin-small">
-          <figure>
-            <img src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1820&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@heftiba" target="_blank">Toa Heftiba</a></div>
-            <figcaption>Phasellus viverra nulla!</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1590727264967-f26b2d31e3a1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=792&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@markusspiske" target="_blank">Markus Spiske</a></div>
-            <figcaption>Nam eget dui, etiam rhoncus, maecenas tempus</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@priscilladupreez" target="_blank">Priscilla Du Preez</a></div>
-            <figcaption>Nam quam nunc, blandit vel, luctus pulvinar!!!</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1558023784-f8343393cb06?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@frankielopez" target="_blank">Frankie Lopez</a></div>
-            <figcaption>Pellentesque habitant morbi!</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1629036747901-6cad3758cd92?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=772&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@zhugher" target="_blank">he zhu</a></div>
-            <figcaption>Phasellus blandit leo ut odio.</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1477238134895-98438ad85c30?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2600&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@cant89" target="_blank">Davide Cantelli</a></div>
-            <figcaption>Vestibulum ante ipsum primis</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1613946069412-38f7f1ff0b65?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=870&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@simonkaremann" target="_blank">Simon Karemann</a></div>
-            <figcaption>Aenean tellus metus, bibendum sed, posuere ac, mattis.</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1577985043696-8bd54d9f093f?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@adrienolichon" target="_blank">Adrien Olichon</a></div>
-            <figcaption>Nunc nonummy metus vestibulum volutpat.</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1594788094620-4579ad50c7fe?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1742&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@mohammadshahhosseini" target="_blank">Mohammad Shahhosseini</a></div>
-            <figcaption>Sed fringilla mauris sit amet nibh.</figcaption>
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1548&amp;q=80">
-            <div>Credit: <a href="https://unsplash.com/@domlafou" target="_blank">Dom Fou</a></div>
-            <figcaption>Vestibulum purus quam, scelerisque ut.</figcaption>
-          </figure>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <!--End Masonry-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Survey-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="survey">Survey</h2>
-            <hr>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">1. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey add-top-margin">
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2596" id="scenario-question-sq-1508-item-0"> <label class="break-long-url" for="scenario-question-sq-1508-item-0">Strongly Agree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2597" id="scenario-question-sq-1508-item-1"> <label class="break-long-url" for="scenario-question-sq-1508-item-1">Agree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2598" id="scenario-question-sq-1508-item-2"> <label class="break-long-url" for="scenario-question-sq-1508-item-2">Neutral</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2599" id="scenario-question-sq-1508-item-3"> <label class="break-long-url" for="scenario-question-sq-1508-item-3">Disagree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2600" id="scenario-question-sq-1508-item-4"> <label class="break-long-url" for="scenario-question-sq-1508-item-4">Strongly Disagree</label></div>
-              </div>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">2. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey add-top-margin">
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2596" id="scenario-question-sq-1510-item-0"> <label class="break-long-url" for="scenario-question-sq-1510-item-0">Strongly Agree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2597" id="scenario-question-sq-1510-item-1"> <label class="break-long-url" for="scenario-question-sq-1510-item-1">Agree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2598" id="scenario-question-sq-1510-item-2"> <label class="break-long-url" for="scenario-question-sq-1510-item-2">Neutral</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2599" id="scenario-question-sq-1510-item-3"> <label class="break-long-url" for="scenario-question-sq-1510-item-3">Disagree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2600" id="scenario-question-sq-1510-item-4"> <label class="break-long-url" for="scenario-question-sq-1510-item-4">Strongly Disagree</label></div>
-              </div>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">3. Do you have any comments for this study?</span>
-              <textarea class="custom-textbox-survey add-top-margin" placeholder="(max 500 characters)" maxlength="500"></textarea>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">4. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey image-only add-top-margin">
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2720" id="scenario-question-sq-1545-item-2"><label for="scenario-question-sq-1545-item-2">
-                    <figure><img src="https://images.unsplash.com/photo-1597914377769-db5167cb0221?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80">
-                      <div>Credit: Justus Menke</div>
-                      <figcaption>Phasellus viverra nulla ut metus varius laoreet.</figcaption>
-                    </figure>
-                  </label> </div>
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2726" id="scenario-question-sq-1545-item-4"><label for="scenario-question-sq-1545-item-4">
-                    <figure><img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2874&amp;q=80">
-                      <div>Credit: Chris Montgomery</div>
-                      <figcaption>Nam eget dui. Etiam rhoncus</figcaption>
-                    </figure>
-                  </label> </div>
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2721" id="scenario-question-sq-1545-item-5"><label for="scenario-question-sq-1545-item-5">
-                    <figure><img src="https://images.unsplash.com/photo-1506485338023-6ce5f36692df?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
-                      <div>Credit: Jazmin Quaynor</div>
-                      <figcaption>Etiam ultricies nisi vel augue.</figcaption>
-                    </figure>
-                  </label> </div>
-              </div>
-            </div>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
-        <!--End Survey-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Credits-->
-        <div class="flex-row">
-          <div class="flex-item flex-item-stretch flex-column">
-            <p class="text text-small text-italic add-top-margin-large">
-              Credits: <span class="highlight-text">Organization One</span>: Author One and Author Two / <span class="highlight-text">Organization Two</span>: Author Three and Author Four
-            </p>
-          </div>
-        </div>
-        <!--End Credits-->
-        <!-------------------------------------------------------------------------------------------->
-      </div>
+    <div class= "below-banner">
+      <p>Follow our pages on👇</p>
+      <p>Twitter</p>
+      <p>Facebook</p>
+      <p>Instagram</p>
     </div>
-    <div class="footer-container"></div>
-  </div>
+
 </body>
 
 </html>

@@ -1,6 +1,46 @@
-/*************************************************************************
+/************************************************************************
  * Your custom CSS file
  *************************************************************************/
+
+ body{
+  font-family: 'Lobster', cursive;
+}
+p{
+  color: rgb(22, 114, 22);
+}
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: larger;
+  color: rgb(12, 66, 12);
+}
+h2{
+  font-family: 'Lobster', cursive;
+  font-size: larger;
+  color: rgb(12, 66, 12);
+}
+h3{
+  font-family: 'Lobster', cursive;
+  font-size: larger;
+  color: rgb(12, 66, 12);
+}
+.menu-container{
+  border-radius: 30px;
+  margin-left: 10%;
+  width: 40%;
+  margin-right: 70%;
+  background-color: #ade4ae;
+  color: rgb(12, 66, 12);
+
+}
+.table{
+  color: rgb(22, 114, 22);
+}
+.welcome{
+  color: rgb(12, 66, 12);
+}
+.start-banner{
+  margin-left: 30%;
+}
 
 .custom-dropdown {
   width: 240px;
@@ -31,4 +71,19 @@
 #share-url-copy-prompt {
   display: none;
   color: #007bff;
+}
+
+.below-banner{
+  padding-left: 20%;
+  align-items: center;
+  width: 100%;
+  display: inline-block;
+  background-color: #ade4ae;
+  text-decoration: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 10%;
+}
+.text-start{
+  margin-top: 30%;
+  text-align: center;
 }
